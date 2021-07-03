@@ -7,6 +7,7 @@ import java.lang.annotation.Target;
 import org.springframework.core.annotation.AliasFor;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.burningokr.config.SecurityConfig;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
@@ -19,5 +20,5 @@ public @interface RestApiController {
    * @return a string value
    */
   @AliasFor(annotation = RequestMapping.class, attribute = "value")
-  String[] value() default "${system.configuration.api-endpoint}";
+  String[] value() default SecurityConfig.API_PREFIX_CONFIG_NAME;
 }

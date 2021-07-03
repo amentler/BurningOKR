@@ -11,8 +11,9 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+  public static final String API_PREFIX_CONFIG_NAME = "${system.configuration.api-endpoint:/api}";
 
-  @Value("${system.configuration.api-endpoint}")
+  @Value(API_PREFIX_CONFIG_NAME)
   private String apiPrefix;
 
   @Override
