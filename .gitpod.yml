@@ -47,5 +47,5 @@ tasks:
       npm start
 vscode:
   extensions:
-    - cool2k.vscode-lombok@1.0.2:e816/wZO588Jp8PN58Wj6g==
-    - Angular.ng-template@0.1000.7:0IUEFuDEuIrPL5WlPLev9A==
+    - Angular.ng-template
+    - gabrielbb.vscode-lombok
