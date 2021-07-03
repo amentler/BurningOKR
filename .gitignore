@@ -6,3 +6,8 @@
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+
+gitpod/burning-okr.log
+gitpod/time-based-logs/*
+bin
+.vscode/settings.json
